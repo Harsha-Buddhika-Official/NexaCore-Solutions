@@ -1,1 +1,26 @@
 @import "tailwindcss";
+
+@theme {
+  --color-base-950: #05070d;
+  --color-base-900: #0a0e1a;
+  --color-base-800: #0f1420;
+  --color-base-700: #161c2c;
+  --color-base-600: #1e2536;
+
+  --font-sans: "Inter", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+
+  --shadow-glow: 0 0 40px -10px rgba(79, 70, 229, 0.35);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-base-900 text-slate-200 antialiased;
+}
+
+::selection {
+  @apply bg-indigo-500/30 text-white;
+}
