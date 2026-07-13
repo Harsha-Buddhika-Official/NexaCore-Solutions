@@ -1,10 +1,14 @@
+import { Link } from "react-router-dom";
 import OpenInNewIcon from "@mui/icons-material/OpenInNew";
 
 const ProjectCard = ({ project }) => {
-  const { category, title, description, tags, image } = project;
+  const { id, category, title, description, tags, image, liveUrl } = project;
 
   return (
-    <div className="group overflow-hidden rounded-2xl border border-slate-700/60 bg-base-800/50 transition-all duration-300 ease-in-out hover:-translate-y-1 hover:border-[#00F3FF]/50 hover:shadow-[0_0_35px_-6px_#00F3FF]">
+    <Link
+      to={`/projects/${id}`}
+      className="group block overflow-hidden rounded-2xl border border-slate-700/60 bg-base-800/50 transition-all duration-300 ease-in-out hover:-translate-y-1 hover:border-[#00F3FF]/50 hover:shadow-[0_0_35px_-6px_#00F3FF]"
+    >
       <div className="relative h-56 overflow-hidden bg-base-700 sm:h-64">
         <img
           src={image}
@@ -18,7 +22,22 @@ const ProjectCard = ({ project }) => {
           <span className="font-mono text-xs font-semibold tracking-wider text-cyan-400">
             {category}
           </span>
-          <OpenInNewIcon fontSize="small" className="text-slate-500" />
+
+          {liveUrl && (
+            <button
+              type="button"
+              onClick={(e) => {
+                e.preventDefault();
+                e.stopPropagation();
+                window.open(liveUrl, "_blank", "noopener,noreferrer");
+              }}
+              aria-label={`Visit ${title} live site`}
+              className="flex items-center gap-1.5 rounded-full border border-slate-700 px-3 py-1.5 text-xs font-medium text-slate-400 transition-colors duration-300 hover:border-cyan-400/50 hover:text-cyan-400"
+            >
+              Visit Site
+              <OpenInNewIcon sx={{ fontSize: 14 }} />
+            </button>
+          )}
         </div>
 
         <h3 className="mt-2 text-xl font-semibold text-white">{title}</h3>
@@ -37,7 +56,7 @@ const ProjectCard = ({ project }) => {
           ))}
         </div>
       </div>
-    </div>
+    </Link>
   );
 };
 

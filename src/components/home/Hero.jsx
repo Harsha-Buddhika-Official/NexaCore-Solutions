@@ -1,11 +1,15 @@
+import { useState } from "react";
 import CloudIcon from "@mui/icons-material/Cloud";
 import TerminalIcon from "@mui/icons-material/Terminal";
 import Button from "../common/Button";
 import Badge from "../common/Badge";
 import Container from "../common/Container";
 import TerminalCode from "./TerminalCode";
+import CrtOverlay from "./CrtOverlay";
 
 const Hero = () => {
+  const [filename, setFilename] = useState("main.tf");
+
   return (
     <section className="relative overflow-hidden pb-16 pt-14 sm:pb-24 sm:pt-20">
       <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(79,70,229,0.12),_transparent_55%)]" />
@@ -39,19 +43,19 @@ const Hero = () => {
         </div>
 
         <div className="relative">
-          <div className="overflow-hidden rounded-2xl border border-slate-700/60 bg-base-800 shadow-2xl">
-            <div className="flex items-center gap-2 border-b border-slate-700/60 bg-base-700/50 px-4 py-3">
+          <div className="relative overflow-hidden rounded-2xl border border-slate-700/60 bg-base-800 shadow-2xl">
+            <div className="relative flex items-center gap-2 border-b border-slate-700/60 bg-base-700/50 px-4 py-3">
               <span className="h-3 w-3 rounded-full bg-red-500/80" />
               <span className="h-3 w-3 rounded-full bg-yellow-500/80" />
               <span className="h-3 w-3 rounded-full bg-green-500/80" />
-              <span className="ml-auto font-mono text-xs text-slate-500">
-                main.tf
+              <span className="ml-auto font-mono text-xs text-slate-500 transition-opacity duration-200">
+                {filename}
               </span>
             </div>
 
-            <TerminalCode />
+            <TerminalCode onFilenameChange={setFilename} />
 
-            <div className="flex gap-3 border-t border-slate-700/60 p-5">
+            <div className="relative flex gap-3 border-t border-slate-700/60 p-5">
               <div className="flex h-11 w-11 items-center justify-center rounded-lg bg-base-700 text-slate-300">
                 <CloudIcon fontSize="small" />
               </div>
@@ -59,6 +63,8 @@ const Hero = () => {
                 <TerminalIcon fontSize="small" />
               </div>
             </div>
+
+            <CrtOverlay />
           </div>
         </div>
       </Container>

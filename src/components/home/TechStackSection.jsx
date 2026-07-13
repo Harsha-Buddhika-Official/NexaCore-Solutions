@@ -4,7 +4,7 @@ import { techStack } from "../../data/techStack";
 
 const TechStackSection = () => {
   return (
-    <section className="border-y border-white/5 bg-base-800/40 py-16">
+    <section className="border-y border-white/5 bg-[#151C29] py-16">
       <Container>
         <div className="flex flex-col items-start justify-between gap-6 sm:flex-row sm:items-center">
           <div>
@@ -30,7 +30,7 @@ const TechStackSection = () => {
           {techStack.map((tech) => (
             <span
               key={tech.name}
-              className="flex items-center gap-2 rounded-full border border-slate-700 bg-base-800 px-4 py-2 text-sm text-slate-300"
+              className="flex items-center gap-2 rounded-full border border-[#ffffff1a] bg-[#ffffff0c] px-4 py-2 text-sm text-slate-300"
             >
               <span className={`h-2 w-2 rounded-full ${tech.color}`} />
               {tech.name}
