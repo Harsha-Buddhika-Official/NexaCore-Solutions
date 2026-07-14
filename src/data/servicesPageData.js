@@ -99,19 +99,19 @@ export const caseStudies = [
     id: "quantx-dashboard",
     title: "QuantX Dashboard",
     category: "Web App / Finance",
-    image: "/src/assets/projects/quantx-dashboard.jpg",
+    image: "/src/assets/ServiceUI/QuantX_Dashboard.png",
   },
   {
     id: "algostream-cms",
     title: "AlgoStream CMS",
     category: "Platform / Media",
-    image: "/src/assets/projects/algostream-cms.jpg",
+    image: "/src/assets/ServiceUI/AlgoStream_CMS.png",
   },
   {
     id: "securepay-gateway",
     title: "SecurePay Gateway",
     category: "Backend / Fintech",
-    image: "/src/assets/projects/securepay-gateway.jpg",
+    image: "/src/assets/ServiceUI/SecurePay_Gateway.png",
   },
 ];
 
@@ -179,7 +179,8 @@ export const cloudInfrastructure = {
   title: "Cloud Infrastructure & DevOps",
   description:
     "Modernize your infrastructure with containerized workloads, serverless compute, and automated CI/CD pipelines that guarantee 99.9% uptime.",
-  image: "/src/assets/projects/cloud-infrastructure.jpg",
+  image: "/src/assets/ServiceUI/Cloud_DevOps1.png",
+  imageHover: "/src/assets/ServiceUI/Cloud_DevOps2.png",
   stat: { value: "99.9%", label: "UPTIME GUARANTEED" },
   points: [
     {

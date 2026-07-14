@@ -2,7 +2,7 @@ import Container from "../common/Container";
 import { cloudInfrastructure } from "../../data/servicesPageData";
 
 const CloudInfrastructureSection = () => {
-  const { index, icon: Icon, title, description, image, stat, points } =
+  const { index, icon: Icon, title, description, image, imageHover, stat, points } =
     cloudInfrastructure;
 
   return (
@@ -43,11 +43,18 @@ const CloudInfrastructureSection = () => {
           </div>
 
           <div className="relative">
-            <div className="overflow-hidden rounded-2xl border border-slate-700/60 bg-base-800">
+            <div className="group relative h-72 overflow-hidden rounded-2xl border border-slate-700/60 bg-base-800 transition-[border-color,box-shadow] duration-500 ease-out hover:border-[#00F3FF]/50 hover:shadow-[0_0_40px_-8px_#00F3FF] sm:h-96">
+              {/* base image — fades out smoothly on hover */}
               <img
                 src={image}
                 alt={title}
-                className="h-72 w-full object-cover sm:h-96"
+                className="absolute inset-0 h-full w-full object-cover opacity-100 transition-opacity duration-700 ease-in-out group-hover:opacity-0"
+              />
+              {/* hover image — fades in smoothly on hover */}
+              <img
+                src={imageHover}
+                alt={`${title} — active state`}
+                className="absolute inset-0 h-full w-full object-cover opacity-0 transition-opacity duration-700 ease-in-out group-hover:opacity-100"
               />
             </div>
 
