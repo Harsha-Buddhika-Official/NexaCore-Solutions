@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { NavLink } from "react-router-dom";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
 import { navLinks } from "../../data/navLinks";
@@ -6,41 +7,60 @@ import Button from "../common/Button";
 import Container from "../common/Container";
 import logo from "../../assets/logos/logo.png";
 
+const desktopLinkClasses = ({ isActive }) =>
+  `group relative text-sm font-medium transition-colors duration-200 ${
+    isActive ? "text-[#00F1FD]" : "text-slate-300 hover:text-[#00F1FD]"
+  }`;
+
+const mobileLinkClasses = ({ isActive }) =>
+  `text-sm font-medium transition-colors ${
+    isActive ? "text-[#00F1FD]" : "text-slate-300 hover:text-[#00F1FD]"
+  }`;
+
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
     <header className="sticky top-0 z-50 border-b border-white/5 bg-base-900/80 backdrop-blur-md">
       <Container>
-        <nav className="flex h-16 items-center justify-between sm:h-20">
-          <a href="/" className="flex items-center gap-2">
-            <img src={logo} alt="NexaCore Solutions" className="h-8 w-8" />
+        <nav className="flex items-center justify-between h-16 sm:h-20">
+          <NavLink to="/" className="flex items-center gap-2">
+            <img src={logo} alt="NexaCore Solutions" className="w-8 h-8" />
             <span className="text-lg font-bold text-white">
               NexaCore Solutions
             </span>
-          </a>
+          </NavLink>
 
-          <div className="hidden items-center gap-8 lg:flex">
+          <div className="items-center hidden gap-8 lg:flex">
             {navLinks.map((link) => (
-              <a
-                key={link.href}
-                href={link.href}
-                className="group relative text-sm font-medium text-slate-300 transition-colors duration-200 hover:text-indigo-400"
-              >
-                {link.label}
-                <span className="absolute -bottom-1 left-1/2 h-0.5 w-0 -translate-x-1/2 bg-indigo-400 transition-all duration-200 ease-out group-hover:w-full" />
-              </a>
+              <NavLink key={link.href} to={link.href} className={desktopLinkClasses}>
+                {({ isActive }) => (
+                  <>
+                    {link.label}
+                    <span
+                      className={`absolute -bottom-1 left-1/2 h-0.5 -translate-x-1/2 bg-[#00F1FD] transition-all duration-200 ease-out ${
+                        isActive ? "w-full" : "w-0 group-hover:w-full"
+                      }`}
+                    />
+                  </>
+                )}
+              </NavLink>
             ))}
           </div>
 
-          <div className="hidden items-center gap-6 lg:flex">
-            <a
-              href="/contact"
-              className="group relative text-sm font-medium text-slate-300 transition-colors duration-200 hover:text-indigo-400"
-            >
-              Contact
-              <span className="absolute -bottom-1 left-1/2 h-0.5 w-0 -translate-x-1/2 bg-indigo-400 transition-all duration-200 ease-out group-hover:w-full" />
-            </a>
+          <div className="items-center hidden gap-6 lg:flex">
+            <NavLink to="/contact" className={desktopLinkClasses}>
+              {({ isActive }) => (
+                <>
+                  Contact
+                  <span
+                    className={`absolute -bottom-1 left-1/2 h-0.5 -translate-x-1/2 bg-[#00F1FD] transition-all duration-200 ease-out ${
+                      isActive ? "w-full" : "w-0 group-hover:w-full"
+                    }`}
+                  />
+                </>
+              )}
+            </NavLink>
             <Button as="a" href="/start-project">
               Start Project
             </Button>
@@ -61,23 +81,20 @@ const Navbar = () => {
         </nav>
 
         {isOpen && (
-          <div className="flex flex-col gap-4 border-t border-white/5 py-6 lg:hidden">
+          <div className="flex flex-col gap-4 py-6 border-t border-white/5 lg:hidden">
             {navLinks.map((link) => (
-              <a
+              <NavLink
                 key={link.href}
-                href={link.href}
-                className="text-sm font-medium text-slate-300 transition-colors hover:text-indigo-400"
+                to={link.href}
+                className={mobileLinkClasses}
                 onClick={() => setIsOpen(false)}
               >
                 {link.label}
-              </a>
+              </NavLink>
             ))}
-            <a
-              href="/contact"
-              className="text-sm font-medium text-slate-300 transition-colors hover:text-indigo-400"
-            >
+            <NavLink to="/contact" className={mobileLinkClasses}>
               Contact
-            </a>
+            </NavLink>
             <Button as="a" href="/start-project" className="w-full">
               Start Project
             </Button>

@@ -3,16 +3,20 @@ import Navbar from "./components/layout/Navbar";
 import Footer from "./components/layout/Footer";
 import Home from "./pages/Home";
 import Services from "./pages/Services";
+import Technologies from "./pages/Technologies";
+import Projects from "./pages/Projects";
 
 function App() {
   return (
     <BrowserRouter>
-      <div className="flex min-h-screen flex-col">
+      <div className="flex flex-col min-h-screen">
         <Navbar />
         <main className="flex-1">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/services" element={<Services />} />
+            <Route path="/technologies" element={<Technologies />} />
+            <Route path="/projects" element={<Projects />} />
           </Routes>
         </main>
         <Footer />
