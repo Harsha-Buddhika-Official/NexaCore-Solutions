@@ -9,20 +9,6 @@ import PhotoLibraryIcon from "@mui/icons-material/PhotoLibrary";
 import DevicesIcon from "@mui/icons-material/Devices";
 import SpeedIcon from "@mui/icons-material/Speed";
 
-// Single source of truth for all project data, shared by the Home page's
-// "Featured Projects" section, the full Projects grid, and the dynamic
-// project detail page at `/projects/:slug`.
-//
-// Card-display fields (headlineStat, headlineLabel, stats, tags, country)
-// drive the compact ProjectCard shown on Home/Projects.
-//
-// Detail-page fields (caseStudyNumber, industry, timeline, buildLabel,
-// problem, solution, features, metrics, liveUrl) drive ProjectDetail —
-// kept in this same file so every surface stays in sync from one edit.
-//
-// `accentColor` themes the card glow AND the entire detail page (hero
-// glow, badges, buttons, metric colors).
-
 export const filterOptions = ["All", "Web", "Mobile", "Software", "SaaS"];
 
 export const projects = [
@@ -153,7 +139,7 @@ export const projects = [
       "The travel agency needed a visually appealing and responsive website to promote its tour packages, destinations, and services while providing visitors with a seamless browsing experience across desktop and mobile devices.",
     solution:
       "Developed a modern frontend application using React.js, Tailwind CSS, and Material UI Icons. The website includes an interactive landing page, featured destinations, tour package listings, service highlights, customer testimonials, contact section, and a clean, mobile-first interface optimized for performance and user engagement.",
-    liveUrl: "https://your-travel-website-url.com",
+    liveUrl: "https://travel-website-pink-pi.vercel.app/",
     features: [
       {
         icon: ExploreIcon,
