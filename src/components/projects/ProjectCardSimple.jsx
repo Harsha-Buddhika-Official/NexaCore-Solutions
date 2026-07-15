@@ -1,10 +1,13 @@
 import CheckCircleIcon from "@mui/icons-material/CheckCircle";
 
 const ProjectCardSimple = ({ project }) => {
-  const { image, title, description, bullets, tags } = project;
+  const { image, title, description, bullets, tags, accentColor } = project;
 
   return (
-    <div className="group flex h-full flex-col overflow-hidden rounded-2xl border border-slate-700/60 bg-base-800/50 transition-all duration-300 ease-in-out hover:-translate-y-1 hover:border-[#00F3FF]/50 hover:shadow-[0_0_35px_-6px_#00F3FF]">
+    <div
+      style={{ "--accent": accentColor }}
+      className="group flex h-full flex-col overflow-hidden rounded-2xl border border-slate-700/60 bg-base-800/50 transition-all duration-300 ease-in-out hover:-translate-y-1 hover:border-[var(--accent)]/50 hover:shadow-[0_0_35px_-6px_var(--accent)]"
+    >
       <div className="relative overflow-hidden h-72 bg-base-700 sm:h-80">
         <img
           src={image}
@@ -28,7 +31,8 @@ const ProjectCardSimple = ({ project }) => {
               >
                 <CheckCircleIcon
                   fontSize="small"
-                  className="mt-0.5 shrink-0 text-cyan-400"
+                  style={{ color: "var(--accent)" }}
+                  className="mt-0.5 shrink-0"
                 />
                 {bullet}
               </li>

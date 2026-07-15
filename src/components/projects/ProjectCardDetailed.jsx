@@ -1,9 +1,20 @@
 const ProjectCardDetailed = ({ project }) => {
-  const { image, activeCase, title, description, problem, solution, tags } =
-    project;
+  const {
+    image,
+    activeCase,
+    title,
+    description,
+    problem,
+    solution,
+    tags,
+    accentColor,
+  } = project;
 
   return (
-    <div className="group overflow-hidden rounded-2xl border border-slate-700/60 bg-base-800/50 transition-all duration-300 ease-in-out hover:-translate-y-1 hover:border-[#00F3FF]/50 hover:shadow-[0_0_35px_-6px_#00F3FF]">
+    <div
+      style={{ "--accent": accentColor }}
+      className="group overflow-hidden rounded-2xl border border-slate-700/60 bg-base-800/50 transition-all duration-300 ease-in-out hover:-translate-y-1 hover:border-[var(--accent)]/50 hover:shadow-[0_0_35px_-6px_var(--accent)]"
+    >
       <div className="relative overflow-hidden h-72 bg-base-700 sm:h-80">
         <img
           src={image}
@@ -11,8 +22,14 @@ const ProjectCardDetailed = ({ project }) => {
           className="object-cover w-full h-full transition-transform duration-300 ease-in-out group-hover:scale-105"
         />
         {activeCase && (
-          <span className="absolute right-4 top-4 flex items-center gap-2 rounded-full border border-emerald-400/30 bg-base-900/80 px-3 py-1.5 font-mono text-[10px] font-semibold tracking-wider text-emerald-400 backdrop-blur-sm">
-            <span className="h-1.5 w-1.5 rounded-full bg-emerald-400" />
+          <span
+            style={{ borderColor: "var(--accent)", color: "var(--accent)" }}
+            className="absolute right-4 top-4 flex items-center gap-2 rounded-full border bg-base-900/80 px-3 py-1.5 font-mono text-[10px] font-semibold tracking-wider backdrop-blur-sm"
+          >
+            <span
+              style={{ backgroundColor: "var(--accent)" }}
+              className="h-1.5 w-1.5 rounded-full"
+            />
             ACTIVE CASE
           </span>
         )}
@@ -34,7 +51,10 @@ const ProjectCardDetailed = ({ project }) => {
             </p>
           </div>
           <div>
-            <p className="font-mono text-[10px] font-semibold tracking-wider text-cyan-400">
+            <p
+              style={{ color: "var(--accent)" }}
+              className="font-mono text-[10px] font-semibold tracking-wider"
+            >
               THE SOLUTION
             </p>
             <p className="mt-2 text-sm leading-relaxed text-slate-300">
