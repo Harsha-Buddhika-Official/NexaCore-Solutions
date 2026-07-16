@@ -28,7 +28,7 @@ const GenesisSection = () => {
             <img
               src={image}
               alt="Engineering hardware close-up"
-              className="object-cover w-full h-72 sm:h-96"
+              className="object-cover w-full transition-transform duration-300 ease-in-out h-72 sm:h-96 hover:scale-105"
             />
           </div>
         </div>

@@ -16,7 +16,7 @@ const RoadmapCard = ({ card }) => {
         {description}
       </p>
       <span
-        className={`mt-5 block h-0.5 w-10 ${underlineColor} transition-all duration-300 ease-in-out group-hover:w-16`}
+        className={`mt-5 block h-0.5 w-10 ${underlineColor} transition-all duration-300 ease-in-out group-hover:w-full`}
       />
     </div>
   );

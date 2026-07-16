@@ -19,7 +19,7 @@ export const genesis = {
     "Founded by a group of systems architects and full-stack visionaries, NexaCore emerged from a simple observation: software complexity is rising faster than our tools' ability to manage it. We set out to build a firm that prioritizes structural integrity over rapid patching.",
     'Since our inception in 2018, we have scaled from a niche consultancy to a global partner for Fortune 500 tech firms, always maintaining our "code-is-art" philosophy at the heart of our operations.',
   ],
-  image: "/src/assets/about/motherboard.jpg",
+  image: "/src/assets/about/hero.png",
 };
 
 export const missionVision = [

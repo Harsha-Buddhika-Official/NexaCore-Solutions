@@ -7,7 +7,7 @@ const CoreValuesSection = () => {
   const { title, subtitle, values } = coreValues;
 
   return (
-    <section className="py-16 border-y border-white/5 bg-base-800/40 sm:py-20">
+    <section className="py-16 border-y border-white/5 bg-[#151C29] sm:py-20">
       <Container>
         <SectionHeading title={title} subtitle={subtitle} />
 
