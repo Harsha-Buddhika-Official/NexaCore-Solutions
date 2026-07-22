@@ -18,7 +18,12 @@ const Footer = () => {
           {/* Brand column */}
           <div>
             <div className="flex items-center gap-2">
-              <div className="h-7 w-7 rounded-md bg-gradient-to-br from-indigo-500 to-purple-500" />
+              {/* <div className="rounded-md h-7 w-7 bg-gradient-to-br from-indigo-500 to-purple-500" /> */}
+              <img
+                src="/src/assets/logos/logo.png"
+                alt="NexaCore Solutions Logo"
+                className="w-7 h-7"
+              />
               <span className="text-base font-bold text-white">
                 NexaCore Solutions
               </span>
@@ -27,13 +32,13 @@ const Footer = () => {
               Engineering high-performance digital products for the next
               generation of enterprises.
             </p>
-            <div className="mt-5 flex gap-3">
+            <div className="flex gap-3 mt-5">
               {socialLinks.map(({ icon: Icon, href, label }) => (
                 <a
                   key={label}
                   href={href}
                   aria-label={label}
-                  className="flex h-9 w-9 items-center justify-center rounded-lg border border-slate-700 text-slate-400 transition-colors hover:border-slate-500 hover:text-white"
+                  className="flex items-center justify-center transition-colors border rounded-lg h-9 w-9 border-slate-700 text-slate-400 hover:border-slate-500 hover:text-white"
                 >
                   <Icon fontSize="small" />
                 </a>
@@ -44,7 +49,7 @@ const Footer = () => {
           {/* Link columns */}
           {footerColumns.map((column) => (
             <div key={column.title}>
-              <h4 className="text-xs font-semibold uppercase tracking-wider text-slate-500">
+              <h4 className="text-xs font-semibold tracking-wider uppercase text-slate-500">
                 {column.title}
               </h4>
               <ul className="mt-4 space-y-3">
@@ -52,7 +57,7 @@ const Footer = () => {
                   <li key={link}>
                     <a
                       href="/"
-                      className="text-sm text-slate-400 transition-colors hover:text-white"
+                      className="text-sm transition-colors text-slate-400 hover:text-white"
                     >
                       {link}
                     </a>
@@ -64,24 +69,24 @@ const Footer = () => {
 
           {/* Newsletter */}
           <div>
-            <h4 className="text-xs font-semibold uppercase tracking-wider text-slate-500">
+            <h4 className="text-xs font-semibold tracking-wider uppercase text-slate-500">
               Join Newsletter
             </h4>
             <p className="mt-4 text-sm text-slate-400">
               Stay updated with our latest tech insights.
             </p>
             <form
-              className="mt-4 flex gap-2"
+              className="flex gap-2 mt-4"
               onSubmit={(e) => e.preventDefault()}
             >
               <input
                 type="email"
                 placeholder="Email"
-                className="w-full rounded-lg border border-slate-700 bg-base-800 px-3 py-2 text-sm text-white placeholder:text-slate-500 focus:border-indigo-500 focus:outline-none"
+                className="w-full px-3 py-2 text-sm text-white border rounded-lg border-slate-700 bg-base-800 placeholder:text-slate-500 focus:border-indigo-500 focus:outline-none"
               />
               <button
                 type="submit"
-                className="rounded-lg bg-indigo-600 px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-indigo-500"
+                className="px-4 py-2 text-sm font-medium text-white transition-colors bg-indigo-600 rounded-lg hover:bg-indigo-500"
               >
                 Go
               </button>
@@ -90,7 +95,7 @@ const Footer = () => {
         </div>
 
         {/* Bottom bar */}
-        <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-white/5 pt-8 text-xs text-slate-500 sm:flex-row">
+        <div className="flex flex-col items-center justify-between gap-4 pt-8 mt-12 text-xs border-t border-white/5 text-slate-500 sm:flex-row">
           <p>
             © {new Date().getFullYear()} NexaCore Solutions. Engineered for
             Excellence.

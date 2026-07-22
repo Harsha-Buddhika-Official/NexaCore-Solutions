@@ -3,6 +3,8 @@ import PhoneIcon from "@mui/icons-material/Phone";
 import TerminalIcon from "@mui/icons-material/Terminal";
 import ShareIcon from "@mui/icons-material/Share";
 import PublicIcon from "@mui/icons-material/Public";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import FacebookIcon from "@mui/icons-material/Facebook";
 
 export const heroContent = {
   badge: "CONTACT US",
@@ -37,9 +39,18 @@ export const officeLocation = {
 };
 
 export const socialLinks = [
-  { id: "github", icon: TerminalIcon, label: "GitHub", href: "https://github.com" },
-  { id: "linkedin", icon: ShareIcon, label: "LinkedIn", href: "https://linkedin.com" },
-  { id: "twitter", icon: PublicIcon, label: "Twitter", href: "https://twitter.com" },
+  {
+    id: "github",
+    icon: GitHubIcon,
+    label: "GitHub",
+    href: "https://github.com/your-github-username",
+  },
+  {
+    id: "facebook",
+    icon: FacebookIcon,
+    label: "Facebook",
+    href: "https://www.facebook.com/profile.php?id=61591632118877",
+  },
 ];
 
 export const projectTypes = [

@@ -1,5 +1,6 @@
 import e_commerce from "../assets/projects/e_commerce.png";
 import sri_lanka_travel from "../assets/projects/sri_lanka_travel.png";
+import hash_studio from "../assets/projects/hash_studio.png";
 import InventoryIcon from "@mui/icons-material/Inventory";
 import ShieldIcon from "@mui/icons-material/Shield";
 import AdminPanelSettingsIcon from "@mui/icons-material/AdminPanelSettings";
@@ -9,14 +10,14 @@ import PhotoLibraryIcon from "@mui/icons-material/PhotoLibrary";
 import DevicesIcon from "@mui/icons-material/Devices";
 import SpeedIcon from "@mui/icons-material/Speed";
 
-export const filterOptions = ["All", "Web", "Mobile", "Software", "SaaS"];
+export const filterOptions = ["All", "Web Application", "Mobile", "Software", "SaaS"];
 
 export const projects = [
   {
     id: "ozone-computers-ecommerce",
     slug: "ozone-computers-ecommerce",
     featured: true,
-    category: "Web",
+    category: "Web Application",
     country: "Sri Lanka",
     accentColor: "#2563eb", // blue
     image: e_commerce,
@@ -112,7 +113,7 @@ export const projects = [
     id: "sri-lanka-travel",
     slug: "sri-lanka-travel",
     featured: true,
-    category: "Web",
+    category: "Web Application",
     country: "Sri Lanka",
     accentColor: "#16a34a", // green
     image: sri_lanka_travel,
@@ -171,6 +172,106 @@ export const projects = [
       { value: "3", label: "CUSTOM HOOKS", color: "text-cyan-400" },
       { value: "0", label: "UI LIBRARIES USED", color: "text-emerald-400" },
       { value: "1", label: "PAGE LOAD, ZERO LAG", color: "text-indigo-300" },
+    ],
+  },
+  {
+    id: "Hash-Studio-Graphics",
+    slug: "hash-studio-graphics",
+    featured: true,
+    category: "Web Application",
+    country: "Sri Lanka",
+    accentColor: "#0F93B7",
+    image: hash_studio,
+    activeCase: true,
+
+    // Card Display
+    headlineStat: "React",
+    headlineLabel: "Business Portfolio",
+    title: "Hash Studio Graphics",
+    description:
+      "A premium portfolio website built for Hash Studio Graphics to showcase branding, graphic design, digital marketing, and creative projects through a modern, responsive, and visually engaging user experience.",
+
+    stats: [
+      {
+        value: "100%",
+        label: "RESPONSIVE DESIGN",
+      },
+      {
+        value: "React",
+        label: "FRONTEND APPLICATION",
+      },
+    ],
+
+    tags: [
+      "React.js",
+      "Tailwind CSS",
+      "JavaScript",
+      "Material UI Icons",
+      "Responsive UI",
+    ],
+
+    // Detail Page
+    caseStudyNumber: "002",
+    industry: "Creative Design Agency",
+    timeline: "2 Months",
+    buildLabel: "LATEST BUILD: v1.3.0-STABLE",
+
+    problem:
+      "Hash Studio Graphics required a modern online presence capable of professionally presenting its design portfolio, branding services, social media creatives, packaging designs, vehicle branding, and digital solutions while providing an excellent experience across all devices.",
+
+    solution:
+      "Designed and developed a fast, modern React-based portfolio website with a clean user interface, immersive animations, project showcase, service pages, client testimonials, and responsive layouts. The website strengthens the studio's digital identity while making it easier for potential clients to explore services and contact the team.",
+
+    liveUrl: "https://hash-studio-web.vercel.app/",
+
+    features: [
+      {
+        icon: ExploreIcon,
+        title: "Premium Hero Experience",
+        description:
+          "Animated fullscreen hero section featuring smooth transitions, creative visuals, and engaging call-to-action elements that immediately capture visitor attention.",
+      },
+      {
+        icon: PhotoLibraryIcon,
+        title: "Creative Portfolio Showcase",
+        description:
+          "Interactive portfolio gallery displaying branding, social media designs, packaging, logo designs, vehicle branding, and other creative projects with responsive layouts.",
+      },
+      {
+        icon: DevicesIcon,
+        title: "Fully Responsive Design",
+        description:
+          "Optimized for desktop, tablet, and mobile devices using fluid layouts, adaptive typography, and responsive components to ensure a seamless browsing experience.",
+      },
+      {
+        icon: SpeedIcon,
+        title: "Performance Optimized",
+        description:
+          "Lightweight React architecture with optimized assets, lazy loading, and efficient rendering to deliver fast page speeds and smooth user interactions.",
+      },
+    ],
+
+    metrics: [
+      {
+        value: "100%",
+        label: "RESPONSIVE DESIGN",
+        color: "text-white",
+      },
+      {
+        value: "50+",
+        label: "CREATIVE PROJECTS",
+        color: "text-cyan-400",
+      },
+      {
+        value: "6+",
+        label: "YEARS OF EXPERIENCE",
+        color: "text-sky-400",
+      },
+      {
+        value: "Fast",
+        label: "OPTIMIZED PERFORMANCE",
+        color: "text-indigo-300",
+      },
     ],
   },
 ];
