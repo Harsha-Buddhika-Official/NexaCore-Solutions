@@ -4,12 +4,12 @@ import GestureIcon from "@mui/icons-material/Gesture";
 import PhoneIphoneIcon from "@mui/icons-material/PhoneIphone";
 
 export const heroContent = {
-  badge: "ENGINEERING STACK",
-  titleLine1: "Built on ",
+  badge: "TECHNOLOGY FOUNDATION",
+  titleLine1: "Built With ",
   titleHighlight1: "Modern",
-  titleLine2: "Foundations",
+  titleLine2: "Technology",
   description:
-    "We leverage a curated selection of industry-leading technologies to build scalable, high-performance solutions. Our stack is engineered for speed, security, and developer productivity.",
+    "We use reliable and industry-proven technologies to create secure, scalable, and user-friendly digital solutions. Our technology choices focus on performance, maintainability, and delivering real business value.",
 };
 
 export const frontendCategory = {
@@ -24,8 +24,9 @@ export const frontendCategory = {
       tagColor: "text-cyan-400 border-cyan-400/30 bg-cyan-500/10",
       title: "JavaScript (ES6+)",
       description:
-        "The heartbeat of modern web interactivity. We utilize advanced ES6+ features for clean, efficient, and reactive logic.",
-      benefit: "Ubiquitous performance & cross-platform compatibility.",
+        "A powerful programming foundation used to create interactive, responsive, and dynamic digital experiences for modern users.",
+      benefit:
+        "Reliable performance across different devices and platforms.",
       benefitColor: "text-slate-300",
     },
     {
@@ -36,8 +37,9 @@ export const frontendCategory = {
       tagColor: "text-cyan-400 border-cyan-400/30 bg-cyan-500/10",
       title: "React.js",
       description:
-        "Component-based architecture for building highly dynamic user interfaces with virtual DOM efficiency.",
-      benefit: "Rapid scaling and highly maintainable UI codebases.",
+        "A modern framework for building fast, flexible, and easy-to-maintain user interfaces that provide smooth customer experiences.",
+      benefit:
+        "Scalable interfaces that are easier to improve and maintain.",
       benefitColor: "text-slate-300",
     },
     {
@@ -49,8 +51,9 @@ export const frontendCategory = {
       tagColor: "text-cyan-400 border-cyan-400/30 bg-cyan-500/10",
       title: "Tailwind CSS",
       description:
-        "A utility-first CSS framework for rapid UI development without leaving your HTML, ensuring design consistency.",
-      benefit: "Zero runtime overhead and highly modular styling.",
+        "A modern styling approach that helps us create clean, consistent, and responsive designs efficiently.",
+      benefit:
+        "Faster development with consistent visual experiences.",
       benefitColor: "text-slate-300",
     },
   ],
@@ -58,30 +61,32 @@ export const frontendCategory = {
 
 export const infrastructureCategory = {
   icon: StorageIcon,
-  title: "Infrastructure & Logic",
+  title: "Infrastructure & Backend",
   cards: [
     {
       id: "node",
       badgeText: ">_",
       badgeStyle: "custom",
-      tag: "RUNTIME",
+      tag: "BACKEND",
       tagColor: "text-emerald-400 border-emerald-400/30 bg-emerald-500/10",
       title: "Node.js & Express",
       description:
-        "Event-driven, non-blocking I/O runtime for building fast, scalable network applications and RESTful APIs.",
-      benefit: "Seamless full-stack JS development environment.",
+        "Reliable backend technologies used to create powerful APIs, business systems, and applications that handle real-world operations.",
+      benefit:
+        "Efficient development for complete full-stack solutions.",
       benefitColor: "text-emerald-400",
     },
     {
       id: "databases",
       badgeText: "☰",
       badgeStyle: "custom",
-      tag: "STORAGE",
+      tag: "DATABASE",
       tagColor: "text-emerald-400 border-emerald-400/30 bg-emerald-500/10",
       title: "Postgres & MongoDB",
       description:
-        "Support for both relational and document-based data management to fit any project architecture needs.",
-      benefit: "Data integrity with horizontal scalability options.",
+        "Flexible database solutions that securely store, organize, and manage important business information.",
+      benefit:
+        "Reliable data management designed for future growth.",
       benefitColor: "text-emerald-400",
     },
     {
@@ -92,8 +97,9 @@ export const infrastructureCategory = {
       tagColor: "text-emerald-400 border-emerald-400/30 bg-emerald-500/10",
       title: "Docker",
       description:
-        'Containerization platform that ensures your applications run consistently across any environment from local to cloud.',
-      benefit: 'Eliminates "it works on my machine" bottlenecks.',
+        "A deployment technology that helps applications run consistently across development, testing, and production environments.",
+      benefit:
+        "Smoother deployments with fewer technical issues.",
       benefitColor: "text-emerald-400",
     },
   ],
@@ -113,29 +119,34 @@ export const experienceDesign = {
       tagColor: "text-cyan-400 border-cyan-400/30 bg-cyan-500/10",
       title: "Figma Ecosystem",
       description:
-        "We use Figma not just for UI design, but for systemic engineering handoff. Our design tokens map 1:1 with code implementations.",
-      pills: ["Prototypes", "Auto-Layout", "Design Tokens"],
+        "We design user experiences that are visually attractive, easy to use, and aligned with business goals before development begins.",
+      pills: ["Prototypes", "User Interface", "Design Systems"],
     },
     {
       id: "agile",
       iconGlyph: "✓",
       ringColor: "border-indigo-400/40",
-      glowColor: "shadow-[0_0_40px_-10px_rgba(129,140,248,0.5)]",
+      glowColor:
+        "shadow-[0_0_40px_-10px_rgba(129,140,248,0.5)]",
       iconColor: "text-indigo-300",
       tag: "PROCESS",
-      tagColor: "text-indigo-300 border-indigo-400/30 bg-indigo-500/10",
-      title: "Agile Engineering",
+      tagColor:
+        "text-indigo-300 border-indigo-400/30 bg-indigo-500/10",
+      title: "Agile Development",
       description:
-        "Continuous Integration and Deployment (CI/CD) pipelines ensure every line of code is tested and deployed with zero friction.",
-      checklist: ["Automated Testing", "Scalable Architecture"],
+        "A flexible development process that allows continuous improvements, regular updates, and better project visibility.",
+      checklist: [
+        "Continuous Improvements",
+        "Reliable Development Process",
+      ],
     },
   ],
 };
 
 export const techStats = [
-  { value: "99.9%", label: "UPTIME OPTIMIZATION" },
-  { value: "150+", label: "SUCCESSFUL DEPLOYMENTS" },
-  { value: "<200ms", label: "AVERAGE API RESPONSE" },
+  { value: "Modern", label: "TECHNOLOGY STACK" },
+  { value: "Full", label: "STACK DEVELOPMENT" },
+  { value: "Secure", label: "DEVELOPMENT APPROACH" },
 ];
 
 export const mobileCategory = {
@@ -147,11 +158,13 @@ export const mobileCategory = {
       badgeText: "RN",
       badgeStyle: "custom",
       tag: "CROSS-PLATFORM",
-      tagColor: "text-emerald-400 border-emerald-400/30 bg-emerald-500/10",
+      tagColor:
+        "text-emerald-400 border-emerald-400/30 bg-emerald-500/10",
       title: "React Native",
       description:
-        "Write once, deploy to iOS and Android with native-level performance and a shared component architecture.",
-      benefit: "Faster time-to-market without splitting engineering teams.",
+        "A flexible mobile development solution that helps create applications for multiple platforms efficiently.",
+      benefit:
+        "Faster development while maintaining quality user experiences.",
       benefitColor: "text-emerald-400",
     },
     {
@@ -159,11 +172,13 @@ export const mobileCategory = {
       badgeText: "🕊️",
       badgeStyle: "emoji",
       tag: "iOS NATIVE",
-      tagColor: "text-cyan-400 border-cyan-400/30 bg-cyan-500/10",
+      tagColor:
+        "text-cyan-400 border-cyan-400/30 bg-cyan-500/10",
       title: "Swift & SwiftUI",
       description:
-        "For features demanding deep hardware access, we build native iOS modules with Apple's modern declarative UI framework.",
-      benefit: "Buttery-smooth animations and full platform API access.",
+        "Native iOS technologies used to create smooth and reliable applications optimized for Apple devices.",
+      benefit:
+        "High-quality experiences for iPhone and iPad users.",
       benefitColor: "text-slate-300",
     },
     {
@@ -171,11 +186,13 @@ export const mobileCategory = {
       badgeText: "🦋",
       badgeStyle: "emoji",
       tag: "CROSS-PLATFORM",
-      tagColor: "text-cyan-400 border-cyan-400/30 bg-cyan-500/10",
+      tagColor:
+        "text-cyan-400 border-cyan-400/30 bg-cyan-500/10",
       title: "Flutter",
       description:
-        "Google's UI toolkit for pixel-perfect, high-performance apps compiled to native ARM code from a single Dart codebase.",
-      benefit: "Consistent 60fps UI across iOS, Android, and web.",
+        "A modern framework that allows us to build beautiful and consistent mobile applications efficiently.",
+      benefit:
+        "Consistent design experiences across multiple platforms.",
       benefitColor: "text-slate-300",
     },
   ],

@@ -20,8 +20,8 @@ export const contactInfo = [
     id: "email",
     icon: EmailIcon,
     label: "EMAIL OUR CORE TEAM",
-    value: "hello@nexacore.io",
-    href: "mailto:hello@nexacore.io",
+    value: "nexacoresolutionsofficial@gmail.com",
+    href: "mailto:nexacoresolutionsofficial@gmail.com",
   },
   {
     id: "phone",
@@ -32,19 +32,19 @@ export const contactInfo = [
   },
 ];
 
-export const officeLocation = {
-  label: "HQ: 450 Tech Plaza, SF",
-  latitude: 37.7749,
-  longitude: -122.4194,
-};
+// export const officeLocation = {
+//   label: "HQ: 450 Tech Plaza, SF",
+//   latitude: 37.7749,
+//   longitude: -122.4194,
+// };
 
 export const socialLinks = [
-  {
-    id: "github",
-    icon: GitHubIcon,
-    label: "GitHub",
-    href: "https://github.com/your-github-username",
-  },
+  // {
+  //   id: "github",
+  //   icon: GitHubIcon,
+  //   label: "GitHub",
+  //   href: "https://github.com/your-github-username",
+  // },
   {
     id: "facebook",
     icon: FacebookIcon,

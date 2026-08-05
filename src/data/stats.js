@@ -1,6 +1,6 @@
 export const stats = [
-  { value: "150+", label: "Projects Delivered", color: "text-white" },
-  { value: "98+", label: "Happy Clients", color: "text-emerald-400" },
-  { value: "24+", label: "Technologies", color: "text-cyan-400" },
-  { value: "24/7", label: "Expert Support", color: "text-white" },
+  { value: "10+", label: "Projects Showcased", color: "text-white" },
+  { value: "5+", label: "Sample Client Solutions", color: "text-emerald-400" },
+  { value: "4+", label: "Core Technologies", color: "text-cyan-400" },
+  { value: "Ongoing", label: "Support & Improvement", color: "text-white" },
 ];

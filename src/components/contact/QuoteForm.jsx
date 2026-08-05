@@ -21,9 +21,7 @@ const QuoteForm = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     setIsSubmitting(true);
-
-    // Wire this up to your actual backend/email service (e.g. Resend,
-    // a Node/Express endpoint, or a form service) once ready.
+    alert("Use Email or WhatsApp to contact us for now.");
     setTimeout(() => {
       setIsSubmitting(false);
       setFormData(initialFormState);
