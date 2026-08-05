@@ -28,7 +28,7 @@ export const contactInfo = [
     icon: PhoneIcon,
     label: "DIRECT TECHNICAL LINE",
     value: "+9470 525 6440",
-    href: "tel:+94705256440",
+    href: "whatsapp:+94705256440",
   },
 ];
 
@@ -64,7 +64,8 @@ export const projectTypes = [
 
 export const contactStats = [
   { value: "99.9%", label: "UPTIME COMMITMENT", color: "text-indigo-300" },
-  { value: "250+", label: "PROJECTS DEPLOYED", color: "text-emerald-400" },
+  { value: "100%", label: "CUSTOM WORK", color: "text-white" },
   { value: "15min", label: "AVG INITIAL RESPONSE", color: "text-white" },
-  { value: "12+", label: "GLOBAL DATACENTERS", color: "text-indigo-300" },
+  { value: "24/7", label: "SUPPORT ACCESS", color: "text-indigo-300" },
 ];
+

@@ -3,12 +3,7 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import Container from "../common/Container";
 import { footerColumns } from "../../data/footerLinks";
-
-const socialLinks = [
-  { icon: EmailIcon, href: "mailto:hello@nexacore.dev", label: "Email" },
-  { icon: GitHubIcon, href: "https://github.com", label: "GitHub" },
-  { icon: TwitterIcon, href: "https://twitter.com", label: "Twitter" },
-];
+import { contactInfo } from "../../data/contactPageData.js";
 
 const Footer = () => {
   return (
@@ -33,7 +28,7 @@ const Footer = () => {
               generation of enterprises.
             </p>
             <div className="flex gap-3 mt-5">
-              {socialLinks.map(({ icon: Icon, href, label }) => (
+              {contactInfo.map(({ icon: Icon, href, label }) => (
                 <a
                   key={label}
                   href={href}
