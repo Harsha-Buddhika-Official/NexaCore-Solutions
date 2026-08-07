@@ -153,34 +153,34 @@ export const mobileCategory = {
   icon: PhoneIphoneIcon,
   title: "Mobile Development",
   cards: [
-    {
-      id: "react-native",
-      badgeText: "RN",
-      badgeStyle: "custom",
-      tag: "CROSS-PLATFORM",
-      tagColor:
-        "text-emerald-400 border-emerald-400/30 bg-emerald-500/10",
-      title: "React Native",
-      description:
-        "A flexible mobile development solution that helps create applications for multiple platforms efficiently.",
-      benefit:
-        "Faster development while maintaining quality user experiences.",
-      benefitColor: "text-emerald-400",
-    },
-    {
-      id: "swift",
-      badgeText: "🕊️",
-      badgeStyle: "emoji",
-      tag: "iOS NATIVE",
-      tagColor:
-        "text-cyan-400 border-cyan-400/30 bg-cyan-500/10",
-      title: "Swift & SwiftUI",
-      description:
-        "Native iOS technologies used to create smooth and reliable applications optimized for Apple devices.",
-      benefit:
-        "High-quality experiences for iPhone and iPad users.",
-      benefitColor: "text-slate-300",
-    },
+    // {
+    //   id: "react-native",
+    //   badgeText: "RN",
+    //   badgeStyle: "custom",
+    //   tag: "CROSS-PLATFORM",
+    //   tagColor:
+    //     "text-emerald-400 border-emerald-400/30 bg-emerald-500/10",
+    //   title: "React Native",
+    //   description:
+    //     "A flexible mobile development solution that helps create applications for multiple platforms efficiently.",
+    //   benefit:
+    //     "Faster development while maintaining quality user experiences.",
+    //   benefitColor: "text-emerald-400",
+    // },
+    // {
+    //   id: "swift",
+    //   badgeText: "🕊️",
+    //   badgeStyle: "emoji",
+    //   tag: "iOS NATIVE",
+    //   tagColor:
+    //     "text-cyan-400 border-cyan-400/30 bg-cyan-500/10",
+    //   title: "Swift & SwiftUI",
+    //   description:
+    //     "Native iOS technologies used to create smooth and reliable applications optimized for Apple devices.",
+    //   benefit:
+    //     "High-quality experiences for iPhone and iPad users.",
+    //   benefitColor: "text-slate-300",
+    // },
     {
       id: "flutter",
       badgeText: "🦋",

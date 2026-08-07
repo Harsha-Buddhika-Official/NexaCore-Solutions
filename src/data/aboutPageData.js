@@ -6,9 +6,9 @@ import WorkspacePremiumIcon from "@mui/icons-material/WorkspacePremium";
 
 export const heroContent = {
   badge: "CUSTOM SOFTWARE • WEB • CLOUD",
-  titleLine1: "Technology Solutions Built ",
-  titleHighlight: "For",
-  titleLine2: " Real Business Growth.",
+  titleLine1: "Technology Solutions Built For Real ",
+  titleHighlight: "Business Growth.",
+  // titleLine2: " Real Business Growth.",
   description:
     "NexaCore Solutions helps businesses build custom software, websites, e-commerce platforms, and cloud solutions that automate processes, improve efficiency, and create better digital experiences.",
 };

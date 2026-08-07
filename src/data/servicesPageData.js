@@ -8,6 +8,9 @@ import TerminalIcon from "@mui/icons-material/Terminal";
 import GridViewIcon from "@mui/icons-material/GridView";
 import PrecisionManufacturingIcon from "@mui/icons-material/PrecisionManufacturing";
 import CloudIcon from "@mui/icons-material/Cloud";
+import e_commerce from "../assets/projects/e_commerce.png";
+import sri_lanka_travel from "../assets/projects/sri_lanka_travel.png";
+import hash_studio from "../assets/projects/hash_studio.png";
 
 export const heroPills = [
   "Web Development",
@@ -97,24 +100,45 @@ export const faqs = [
   },
 ];
 
+// export const caseStudies = [
+//   {
+//     id: "quantx-dashboard",
+//     title: "QuantX Dashboard",
+//     category: "Web App / Finance",
+//     image: "/src/assets/ServiceUI/QuantX_Dashboard.png",
+//   },
+//   {
+//     id: "algostream-cms",
+//     title: "AlgoStream CMS",
+//     category: "Platform / Media",
+//     image: "/src/assets/ServiceUI/AlgoStream_CMS.png",
+//   },
+//   {
+//     id: "securepay-gateway",
+//     title: "SecurePay Gateway",
+//     category: "Backend / Fintech",
+//     image: "/src/assets/ServiceUI/SecurePay_Gateway.png",
+//   },
+// ];
+
 export const caseStudies = [
   {
-    id: "quantx-dashboard",
-    title: "QuantX Dashboard",
-    category: "Web App / Finance",
-    image: "/src/assets/ServiceUI/QuantX_Dashboard.png",
+    id: "ozone-computers-ecommerce",
+    title: "Ozone Computers E-Commerce Platform",
+    category: "Web Application / E-Commerce",
+    image: e_commerce,
   },
   {
-    id: "algostream-cms",
-    title: "AlgoStream CMS",
-    category: "Platform / Media",
-    image: "/src/assets/ServiceUI/AlgoStream_CMS.png",
+    id: "sri-lanka-travel",
+    title: "Sri Lanka Travel",
+    category: "Web Application / Travel & Tourism",
+    image: sri_lanka_travel,
   },
   {
-    id: "securepay-gateway",
-    title: "SecurePay Gateway",
-    category: "Backend / Fintech",
-    image: "/src/assets/ServiceUI/SecurePay_Gateway.png",
+    id: "hash-studio-graphics",
+    title: "Hash Studio Graphics",
+    category: "Web Application / Creative Agency",
+    image: hash_studio,
   },
 ];
 
@@ -125,7 +149,7 @@ export const mobileApps = {
   title: "Mobile Applications",
   description:
     "We develop user-friendly mobile applications that help businesses connect with customers, improve services, and deliver better digital experiences on Android and iOS platforms.",
-  technologies: ["Flutter", "Kotlin", "Swift", "Firebase"],
+  technologies: ["Flutter", "Firebase"],
   highlights: [
     {
       icon: BoltIcon,
